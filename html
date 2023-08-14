@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/72b8eff39f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/style.css"/>
+  </head>
+<body>
+  <div class="container">
+   <form id="city-form">
+    <input type="text" placeholder="Search City" class="search" id="city-input"/>
+    <input type="submit" value="Search" class="button"/>
+   <input type="submit"  value="Current" class= "button" id="current-location-button"
+    </form>
+      
+    <h1 id="city"> Los Angeles
+        </h1>
+    <h2>
+      <div id="day-time">
+      Monday
+      </div>
+    </br>
+ <i class="fa-solid fa-sun sun"></i> <span id= "current-temperature">30° </span> <span class= "units">
+  C
+  </span> 
+      <p>
+      <div class="row conditions">
+        <div class="col-2" id="description">
+          Sunny
+        </div>
+        <div class="col-2" id="wind">
+          Wind: 0mph
+        </div>
+        <div class="col-2">
+          <div class="col" id="humidity">
+            Humidity: 5%
+          </div>
+        </div>
+      </div>
+    </p>
+  </h2>
+  <h2>
+    <div class="row days">
+      <div class="col-4 tuesday">
+        <div class="card" style="width: 18rem;">
+  <i class="fa-solid fa-sun sunny"></i>
+  <div class="card-body">
+    <p class="card-text">Tuesday
+      <br>
+      75&deg
+    </br>
+      Precipitation: 15%
+  </br>
+Wind: 5mph
+</br>
+Humidity: 10%
+</p>
+  </div>
+</div>
+</div>
+<div class="col-4 wednesday">
+  <div class="card" style="width: 18rem;">
+  <i class="fa-solid fa-cloud-sun cloud"></i>
+  <div class="card-body">
+    <p class="card-text">Wednesday
+      <br>
+      60&deg
+    </br>
+      Precipitation: 20%
+  </br>
+Wind: 10mph
+</br>
+Humidity: 15%</p>
+  </div>
+</div>
+</div>
+<div class="col-4 thursday">
+  <div class="card" style="width: 18rem;">
+  <i class="fa-solid fa-cloud-sun cloud"></i>
+  <div class="card-body">
+    <p class="card-text">Thursday
+      <br>
+      55&deg
+    </br>
+      Precipitation: 20%
+  </br>
+Wind: 15mph
+</br>
+Humidity: 20%</p>
+  </div>
+</div>
+</div>
+<div class="col-4 friday">
+  <div class="card" style="width: 18rem;">
+  <i class="fa-solid fa-cloud-sun-rain rain"></i>
+  <div class="card-body">
+    <p class="card-text">Friday 
+      <br>
+      50&deg
+    </br>
+      Precipitation: 70%
+  </br>
+Wind: 30mph
+</br>
+Humidity: 35%</p>
+  </div>
+</div>
+</div>
+<div class="col-4 saturday">
+  <div class="card" style="width: 18rem;">
+  <i class="fa-solid fa-cloud-sun-rain rain"></i>
+  <div class="card-body">
+    <p class="card-text">Saturday
+      <br>
+      55&deg
+    </br>
+      Precipitation: 50%
+  </br>
+Wind: 45mph
+</br>
+Humidity: 50%</p>
+  </div>
+</div>
+</div>
+<div class= "col-4 sunday">
+  <div class="card" style="width: 18rem;">
+ <i class="fa-solid fa-wind wind"></i>
+  <div class="card-body">
+    <p class="card-text">Sunday
+      <br>
+      65&deg
+    </br>
+      Precipitation: 36%
+  </br>
+Wind: 40mph
+</br>
+Humidity: 5%
+</p>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+  </h2>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
