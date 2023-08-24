@@ -1,23 +1,23 @@
 body {
-  background-image: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3doeS1pcy1za3ktYmx1ZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH0sInRvRm9ybWF0IjoiYXZpZiJ9fQ==);
+  background-image: url(https://img.freepik.com/premium-photo/clouds-are-sky-with-bright-sun-background-generative-ai_899870-31098.jpg?w=2000);
   background-repeat: no-repeat;
   background-size: cover;
 }
 h1 {
   text-align: center;
-  font-family: "Inconsolata", monospace;
+  font-family: "Shadows Into Light", cursive;
   padding: 10px;
 }
 h2 {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Shadows Into Light", cursive;
   text-align: center;
 }
 .search,
 .button {
+  font-family: "Shadows Into Light", cursive;
   position: relative;
   top: 20px;
   left: 20px;
-  font-family: "Inconsolata", monospace;
 }
 .button {
   border-radius: 10px;
@@ -26,31 +26,27 @@ h2 {
 .conditions {
   font-size: 15px;
   opacity: 0.7;
-  font-family: "Inconsolata", monospace;
+  font-family: "Shadows Into Light", cursive;
 }
 .days {
   font-size: 15px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Shadows Into Light", cursive;
 }
 .sun {
   font-size: 50px;
   color: orangered;
 }
-.cloud {
-  font-size: 100px;
-  color: gray;
+.cloudy {
+  font-size: 50px;
 }
-.sunny {
-  font-size: 100px;
-  color: orangered;
+.sun {
+  font-size: 50px;
 }
 .rain {
-  font-size: 100px;
-  color: blue;
+  font-size: 50px;
 }
 .wind {
-  font-size: 100px;
-  color: blueviolet;
+  font-size: 50px;
 }
 .sunday,
 .friday,
@@ -59,7 +55,11 @@ h2 {
   top: 30px;
 }
 .units {
-  font-size: 20px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  left: 1px;
 }
 
 footer {
@@ -67,4 +67,5 @@ footer {
   position: relative;
   top: 30px;
   font-size: 12px;
+  font-family: "Shadows Into Light", cursive;
 }
