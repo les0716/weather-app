@@ -49,6 +49,11 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = `Wind:${Math.round(
     response.data.wind.speed
   )}mph`;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/${response.data.weather[0].icon}`
+  );
 }
 function searchLocation(position) {
   let apiKey = "ad793a6d772939c31783de5822791acf";
