@@ -52,7 +52,7 @@ function showWeather(response) {
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
-    `https://openweathermap.org/img/${response.data.weather[0].icon}`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 function searchLocation(position) {
