@@ -56,10 +56,10 @@ h2 {
 }
 .units {
   font-family: "Shadows Into Light", cursive;
-  font-size: 15px;
+  font-size: 10px;
   position: relative;
-  bottom: 20px;
-  left: 1px;
+  bottom: 15px;
+  right: 9px;
 }
 
 footer {
