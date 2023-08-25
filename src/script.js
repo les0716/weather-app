@@ -54,6 +54,7 @@ function showWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusTemperature = response.data.main.temp;
 }
 function searchLocation(position) {
   let apiKey = "ad793a6d772939c31783de5822791acf";
@@ -65,5 +66,27 @@ function displayCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperature = document.querySelector("#current-temperature");
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#current-temperature");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
+
 let currentLocation = document.querySelector("#current-location-button");
 currentLocation.addEventListener("click", displayCurrentLocation);
+
+let fahrenheitLinnk = document.querySelector("#fahrenheit");
+fahrenheitLinnk.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+search("Los Angeles");

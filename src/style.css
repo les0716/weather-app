@@ -69,3 +69,7 @@ footer {
   font-size: 12px;
   font-family: "Shadows Into Light", cursive;
 }
+.celsius-symbol,
+.fahrenheit-symbol {
+  text-decoration: none;
+}
