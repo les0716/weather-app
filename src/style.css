@@ -2,6 +2,7 @@ body {
   background-image: url(https://img.freepik.com/premium-photo/clouds-are-sky-with-bright-sun-background-generative-ai_899870-31098.jpg?w=2000);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 h1 {
   text-align: center;
