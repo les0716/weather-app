@@ -36,6 +36,10 @@ function searchCity(city) {
   axios.get(`${url}&appid=${apiKey}`).then(showWeather);
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function showWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML = `${Math.round(
@@ -79,21 +83,29 @@ function displayCelsiusTemp(event) {
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
 function displayForecast() {
-  let forecast = document.querySelector("#forecast");
-  forecast.innerHTML = ` <div class="row">
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Sat", "Sun", "Mon", "Tues", "Wed"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
  <div class="col-2" id="forecast">
-        <div class="weather-forecast-day">Monday</div>
+        <div class="weather-forecast-day">${day}</div>
         <img
           src="http://openweathermap.org/img/wn/50d@2x.png"
           alt=""
           width="61"
         />
         <div class="temperatures">
-          <span class="temperature-max"> 20° </span> |
+          <span class="temperature-max"> 20° </span>|
           <span class="temperature-min"> 18° </span>
         </div>
       </div>
-    </div>`;
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 let celsiusTemperature = null;
 
@@ -107,3 +119,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 displayForecast();
+search("Los Angeles");
