@@ -80,7 +80,20 @@ function displayCelsiusTemp(event) {
 }
 function displayForecast() {
   let forecast = document.querySelector("#forecast");
-  forecast.innerHTML = "forecast";
+  forecast.innerHTML = ` <div class="row">
+ <div class="col-2" id="forecast">
+        <div class="weather-forecast-day">Monday</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="61"
+        />
+        <div class="temperatures">
+          <span class="temperature-max"> 20° </span> |
+          <span class="temperature-min"> 18° </span>
+        </div>
+      </div>
+    </div>`;
 }
 let celsiusTemperature = null;
 
@@ -93,5 +106,4 @@ fahrenheitLinnk.addEventListener("click", displayFahrenheitTemp);
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
-search("Los Angeles");
 displayForecast();
