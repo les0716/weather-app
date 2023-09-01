@@ -78,6 +78,10 @@ function displayCelsiusTemp(event) {
   let temperature = document.querySelector("#current-temperature");
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = "forecast";
+}
 let celsiusTemperature = null;
 
 let currentLocation = document.querySelector("#current-location-button");
@@ -90,3 +94,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Los Angeles");
+displayForecast();

@@ -35,7 +35,6 @@ h2 {
 }
 .sun {
   font-size: 50px;
-  color: orangered;
 }
 .cloudy {
   font-size: 50px;
@@ -49,11 +48,24 @@ h2 {
 .wind {
   font-size: 50px;
 }
-.sunday,
-.friday,
-.saturday {
-  position: relative;
-  top: 30px;
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-day {
+  font-size: 20px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.temperature-min {
+  opacity: 0.5;
+}
+
+.temperatures {
+  font-size: 18px;
 }
 .units {
   font-family: "Shadows Into Light", cursive;
