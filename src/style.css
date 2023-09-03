@@ -54,7 +54,7 @@ h2 {
 }
 .units {
   font-family: "Shadows Into Light", cursive;
-  font-size: 10px;
+  font-size: 15px;
   position: relative;
   bottom: 15px;
   right: 9px;
@@ -67,7 +67,6 @@ footer {
   font-size: 12px;
   font-family: "Shadows Into Light", cursive;
 }
-.celsius-symbol,
-.fahrenheit-symbol {
+.git-link {
   text-decoration: none;
 }
